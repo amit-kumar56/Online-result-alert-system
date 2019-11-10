@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>National Institute Of Technology,Hamirpur</title>
+    <style type="text/css">
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        article,
+        figure,
+        figcaption {
+            display: block;
+        }
+        
+        body {
+            color: #666666;
+            background-color: #f9f8f6;
+            background-image: url("image/black-wood.jpg");
+            background-position: center;
+            font-family: Georgia, times, serif;
+            line-height: 1.4em;
+            margin: 0px;
+        }
+        
+        .wrapper {
+            width: 940px;
+            border: 2px solid #000000;
+            margin: 20px auto 20px auto;
+            background-color: #ffffff;
+        }
+        
+        header {
+            height: 160px;
+            background-image: url("/static/index.jpg");
+        }
+        
+        h1 {
+            text-align: center;
+            width: 940px;
+            height: 130px;
+            margin: 0px;
+            font-weight: normal;
+        }
+        
+        nav,
+        footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;
+            height: 30px;
+        }
+        
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        nav li a {
+            color: #ffffff;
+        }
+        
+        nav li a:hover,
+        nav li a.current {
+            color: #000000;
+        }
+        
+        a {
+            color: #de6581;
+            text-decoration: none;
+        }
+        
+        form {
+            text-align: justify;
+            margin-top: 50px;
+            margin-left: 50px;
+            border: #000000;
+            width: 700px auto;
+        }
+        
+        footer {
+            text-align: center;
+            font-size: 80%;
+            padding: 7px 0px 0px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <br>
+            <h1>National Institute Of Technology,Hamirpur<br><br>Himachal Pradesh</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="/" class="current">Home</a></li>
+                    <li><a href="/result">Result</a></li>
+                    <li><a href="">Beauty Corner</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <form action="/process" method="POST">
+            <label>Roll No.<br />
+            <input type="number" name="roll" /></label><br>
+            <label>Semester<br />
+            <input type="number" name="semm" /></label>
+            <input type="submit" value="Submit" />
+        </form>
+        <footer>
+            &copy; 2019 HEROO
+        </footer>
+    </div>
+</body>
+
+</html>

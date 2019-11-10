@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>National Institute Of Technology,Hamirpur</title>
+    <style type="text/css">
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        article,
+        figure,
+        figcaption {
+            display: block;
+        }
+        
+        body {
+            color: #666666;
+            background-color: #f9f8f6;
+            background-image: url("image/black-wood.jpg");
+            background-position: center;
+            font-family: Georgia, times, serif;
+            line-height: 1.4em;
+            margin: 0px;
+        }
+        
+        .wrapper {
+            width: 940px;
+            margin: 20px auto 20px auto;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+        }
+        
+        header {
+            height: 160px;
+            background-image: url("/static/index.jpg");
+        }
+        
+        h1 {
+            text-align: center;
+            width: 940px;
+            height: 130px;
+            font-weight: normal;
+            margin: 0%;
+        }
+        
+        nav,
+        footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;
+            height: 30px;
+        }
+        
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        nav li a {
+            color: #ffffff;
+        }
+        
+        nav li a:hover,
+        nav li a.current {
+            color: #000000;
+        }
+        
+        a {
+            color: #de6581;
+            text-decoration: none;
+        }
+        
+        form {
+            width: 350px;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: blueviolet;
+            text-align: left;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        legend {
+            background-color: #efefef;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        
+        .sign {
+            text-align: center;
+        }
+        
+        p1 {
+            text-decoration-color: darkblue;
+        }
+        
+        footer {
+            text-align: center;
+            font-size: 80%;
+            padding: 7px 0px 0px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <br>
+            <h1>National Institute Of Technology,Hamirpur<br><br>Himachal Pradesh</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="/" class="current">Home</a></li>
+                    <li><a href="/result">Result</a></li>
+                    <li><a href="">Beauty Corner</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="/login">Log In</a></li>
+                    <li><a href="/alert">Alert</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="/signup" method="POST">
+            <legend>Sign Up</legend>
+            <label>Create Username<br />
+            <input type="text" name="uname" required="required" /></label><br>
+            <label>Creat Password<br />
+            <input type="text" name="pasw" required="required" /></label><br>
+            <label>Mobile No.<br />
+            <input type="number" name="mno"required="required" /></label>
+            <input type="submit" value="Sign In" required="required" />
+        </form>
+        {% if msg %}
+        <p><strong>Notes:</strong> {{ msg}} </p>{% endif %}
+        <div class="sign">
+            <p>Log in ? <a href="login">log in</a></p>
+
+
+        </div>
+        </p1>
+
+        <footer>
+            &copy; 2019 HEROO
+        </footer>
+    </div>
+</body>
+
+</html>
